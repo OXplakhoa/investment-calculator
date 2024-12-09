@@ -17,7 +17,7 @@ export default function UserInput({userInput,onChange}) {
             type="number"
             required
             value={userInput.annualInvestment}
-            onChange={(e) => handleChange("annualInvestment", e.target.value)}
+            onChange={(e) => onChange("annualInvestment", e.target.value)}
           />
         </p>
       </div>
@@ -28,7 +28,7 @@ export default function UserInput({userInput,onChange}) {
             type="number"
             required
             value={userInput.expectedReturn}
-            onChange={(e) => handleChange("expectedReturn", e.target.value)}
+            onChange={(e) => onChange("expectedReturn", e.target.value)}
           />
         </p>
         <p>
@@ -37,7 +37,7 @@ export default function UserInput({userInput,onChange}) {
             type="number"
             required
             value={userInput.duration}
-            onChange={(e) => handleChange("duration", e.target.value)}
+            onChange={(e) => onChange("duration", e.target.value)}
           />
         </p>
       </div>
